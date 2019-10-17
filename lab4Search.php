@@ -12,7 +12,7 @@ print $page->getTopSection();
 print 	'<div class="topbar">
 			<h1> CNMT 310 Lab 4 Sanitization</h1>
 			<ul class="nav">
-				<li><a href="lab4Result.php">Home</a></li>
+				<li><a href="lab4Search.php">Search</a></li>
 			</ul>
 		</div>';
 
