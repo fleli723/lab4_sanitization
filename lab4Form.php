@@ -18,7 +18,7 @@ print 	'<div class="topbar">
 
 print	'
 <div class="content">
-	<form name="userSearchBarForm" action="result.php" method="post">
+	<form name="userSearchBarForm" action="lab4Result.php" method="post">
 		
 		<span>Search: </span>
 		<br>
