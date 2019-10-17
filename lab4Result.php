@@ -28,7 +28,7 @@ print		'<div class="content">
 					echo ("ERROR! Please enter an email address using the following format: johnsmith@sample.com\n<br>");
 				}//endif
 				else {
-					echo ("Your email is valid!\n<br>");
+					echo ("$email: Your email is valid!\n<br>");
 				}
 			}else{
 				echo("ERROR: the EMAIL FIELD is blank\n<br>"); 
@@ -36,9 +36,9 @@ print		'<div class="content">
 
 
 			//Validate the integer input
-			if(isset($url)) {
+			if(isset($integer)) {
 				if (filter_var($integer, FILTER_VALIDATE_INT) === 0 || filter_var($integer, FILTER_VALIDATE_INT)) {
-					echo("Your variable is an integer\n<br>");
+					echo("$integer: Your variable is an integer\n<br>");
 				} else {
 					echo("ERROR! Variable is not an integer\n<br>");
 				}//end if
