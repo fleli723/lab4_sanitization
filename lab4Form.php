@@ -21,6 +21,7 @@ print	'
 	<form name="userSearchBarForm" action="result.php" method="post">
 		
 		<span>Search: </span>
+		<br>
 		<input type="text" id="email_Entry" name="email" placeholder="Email"><br>
 		<input type="text" id="integer_Entry" name="integer" placeholder="Any whole number"><br>
 		<input type="text" id="URL_Entry" name="url" placeholder="Enter a URL">
