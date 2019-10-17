@@ -1,6 +1,6 @@
 <?php
 
-require_once("../classes/Template.php");
+require_once("Template.php");
 
 $page = new Template("Search Page");
 $page->addHeadElement('<link rel="stylesheet" type="text/css" href="stylesheet.css">');
