@@ -65,5 +65,3 @@ print		'<div class="content">
 	print	'</div>';
 
 print $page->getBottomSection();
-
-?>
