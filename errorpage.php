@@ -25,4 +25,4 @@ print		'<div class="content">
 
 print $page->getBottomSection();
 
-?>
+?>//comment
