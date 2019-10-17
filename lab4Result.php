@@ -1,21 +1,18 @@
 <?php
 
-require_once("../classes/Template.php");
+require_once("Template.php");
 
-$page = new Template("Action Page");
-$page->addHeadElement('<link rel="stylesheet" type="text/css" href="../css/stylesheet.css">');
+$page = new Template("Result Page");
+$page->addHeadElement('<link rel="stylesheet" type="text/css" href="stylesheet.css">');
 $page->finalizeTopSection();
 $page->finalizeBottomSection();
 
 print $page->getTopSection();
 
 print 	'<div class="topbar">
-			<h1> CNMT 310 Sprint 1 Assignment</h1>
+			<h1> CNMT 310 Lab 4 Sanitization</h1>
 			<ul class="nav">
-				<li><a href="index.php">Home</a></li>		
-				<li><a href="survey.php">Survey</a></li>
-				<li><a href="privacy.php">Privacy Policy</a></li>
-				<li><a href="search.php">Search</a></li>
+				<li><a href="lab4Result.php">Home</a></li>
 			</ul>
 		</div>';
 			
