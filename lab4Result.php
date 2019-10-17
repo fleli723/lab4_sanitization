@@ -24,24 +24,26 @@ print		'<div class="content">
 			//Validate the email adress the user entered.
 			if(isset($email)) {
 				//Validate E-mail (Make sure it is not blank and a valid E-mail Address.)
-				if($email==""){
-					$errors['email']= "PHP - E-mail Address is a required field.";
-				}elseif(!filter_var($email,FILTER_VALIDATE_EMAIL)){
-					$errors['email']= "PHP - Please enter an email address using the following format:&#13;   johnsmith@sample.com";
+				if(!filter_var($email,FILTER_VALIDATE_EMAIL)){
+					echo ("ERROR! Please enter an email address using the following format: johnsmith@sample.com\n<br>");
+				}//endif
+				else {
+					echo ("Your email is valid!\n<br>");
+				}
 			}else{
-				echo("ERROR: the EMAIL FIELD is blank"); 
+				echo("ERROR: the EMAIL FIELD is blank\n<br>"); 
 			}//endif
 
 
 			//Validate the integer input
 			if(isset($url)) {
 				if (filter_var($integer, FILTER_VALIDATE_INT) === 0 || filter_var($integer, FILTER_VALIDATE_INT)) {
-					echo("Variable is an integer");
+					echo("Your variable is an integer\n<br>");
 				} else {
-					echo("Variable is not an integer");
+					echo("ERROR! Variable is not an integer\n<br>");
 				}//end if
 			}else{
-				echo("ERROR: the INETGER FIELD is blank"); 
+				echo("ERROR: the INTEGER FIELD is blank\n<br>"); 
 			}//endif
 
 
@@ -52,12 +54,12 @@ print		'<div class="content">
 
 				// Validate url
 				if (filter_var($url, FILTER_VALIDATE_URL)) {
-					echo("$url is a valid URL");
+					echo("$url is a valid URL\n<br>");
 				} else {
-					echo("$url is not a valid URL");
+					echo("ERROR! $url is not a valid URL\n<br>");
 				}//end if
 			}else{
-				echo("ERROR: the URL FIELD is blank"); 
+				echo("ERROR: the URL FIELD is blank\n"); 
 			}//endif
 
 			
